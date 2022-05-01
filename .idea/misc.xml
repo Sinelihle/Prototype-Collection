@@ -5,8 +5,9 @@
       <map>
         <entry key="app/src/main/res/drawable/text_input.xml" value="0.2085" />
         <entry key="app/src/main/res/layout/activity_add_book.xml" value="0.24583333333333332" />
+        <entry key="app/src/main/res/layout/activity_book_summary.xml" value="0.24803212483723958" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.24583333333333332" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.23177083333333334" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.284698486328125" />
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.2693069458007813" />
         <entry key="app/src/main/res/layout/activity_search_screen.xml" value="0.24583333333333332" />
       </map>

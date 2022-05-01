@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BookHub">
         <activity
+            android:name=".BookSummary"
+            android:exported="false" />
+        <activity
             android:name=".SearchScreenActivity"
             android:exported="false" />
         <activity
