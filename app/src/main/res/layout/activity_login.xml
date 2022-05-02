@@ -7,6 +7,7 @@
     tools:context=".LoginActivity">
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -16,10 +17,10 @@
 
         <LinearLayout
             android:layout_width="fill_parent"
-            android:paddingVertical="40dp"
-            android:paddingHorizontal="30dp"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingHorizontal="30dp"
+            android:paddingVertical="40dp">
 
             <TextView
                 android:id="@+id/welcomeMessage"
@@ -76,28 +77,52 @@
         android:layout_height="match_parent"
         android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Don't have an account?" />
-        <TextView
-            android:id="@+id/login_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Register" />
     </LinearLayout>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/submitButton"
         android:layout_width="fill_parent"
         android:layout_height="55dp"
         android:layout_margin="10dp"
         android:background="@drawable/btn_bg"
         android:text="Sign In"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/submitButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Don't have an account?"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text="Register"
+            android:textColor="#171717"
+            app:layout_constraintBottom_toBottomOf="@+id/textView22"
+            app:layout_constraintStart_toEndOf="@+id/textView22"
+            app:layout_constraintTop_toTopOf="@+id/textView22" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
