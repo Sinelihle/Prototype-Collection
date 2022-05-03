@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -31,7 +32,6 @@ public class MainActivity extends AppCompatActivity {
        }
        else{
             setContentView(R.layout.activity_main);
-
        }
     }
 
@@ -53,6 +53,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void gotoSummary(View v){
+        Intent i = new Intent(this, BookSummary.class);
+        startActivity(i);
+    }
+
+    public void gotoBook(View v){
         Intent i = new Intent(this, BookSummary.class);
         startActivity(i);
     }
