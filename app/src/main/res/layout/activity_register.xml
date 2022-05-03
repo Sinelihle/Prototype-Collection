@@ -49,6 +49,7 @@
                 android:hint="Name"
                 android:inputType="textPersonName"
                 android:padding="20dp" />
+
             <EditText
                 android:id="@+id/password"
                 android:layout_width="match_parent"
@@ -57,7 +58,8 @@
                 android:ems="10"
                 android:hint="Password"
                 android:inputType="textPersonName"
-                android:padding="20dp" />
+                android:padding="20dp"
+                android:password="true" />
 
 
 
@@ -67,13 +69,13 @@
 
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/submitButton"
+        android:id="@+id/registerButton"
         android:layout_width="fill_parent"
         android:layout_height="55dp"
         android:layout_margin="10dp"
         android:background="@drawable/btn_bg"
+        android:onClick="onSignUp"
         android:text="Sign Up"
-        android:onClick="signUp"
         android:textAllCaps="false"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -84,7 +86,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="15dp"
-        app:layout_constraintBottom_toTopOf="@+id/submitButton"
+        app:layout_constraintBottom_toTopOf="@+id/registerButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 

@@ -20,10 +20,10 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/greetingTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hi Itumeleng"
+            android:text="Hi"
             android:textColor="#848FAC"
             android:textSize="13dp"
             app:layout_constraintStart_toStartOf="parent"
@@ -38,7 +38,7 @@
             android:textSize="15dp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/textView5" />
+            app:layout_constraintStart_toStartOf="@+id/greetingTxt" />
 
         <ImageView
             android:id="@+id/imageView3"
@@ -135,6 +135,7 @@ you are no page 56"
             android:id="@+id/button"
             android:layout_height="wrap_content"
             android:text="Continue"
+            android:onClick="gotoSummary"
             android:layout_width="0dp"
             app:layout_constraintEnd_toStartOf="@+id/textView9"
             app:layout_constraintHorizontal_bias="0.5"
