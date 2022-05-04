@@ -58,7 +58,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void gotoBook(View v){
-        Intent i = new Intent(this, BookSummary.class);
-        startActivity(i);
+        setContentView(R.layout.activity_book_summary);
+    }
+
+//view a list of all added books
+    public void viewAllBooks(View v){
+        setContentView(R.layout.activity_all_books);
     }
 }

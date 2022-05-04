@@ -77,13 +77,14 @@
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="102dp"
+            android:scaleType="fitXY"
             android:layout_height="102dp"
             android:layout_marginTop="10dp"
             app:layout_constraintEnd_toStartOf="@+id/textView8"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView6"
-            tools:srcCompat="@tools:sample/avatars" />
+            tools:srcCompat="@drawable/hungger" />
 
         <TextView
             android:id="@+id/textView6"
@@ -101,7 +102,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:text="50 shades of gray"
+            android:text="The Hunger Games"
             android:textColor="#848FAC"
             android:textSize="15dp"
             android:textStyle="bold"
@@ -131,12 +132,16 @@ you are no page 56"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/button"
             android:layout_height="wrap_content"
             android:text="Continue"
             android:onClick="gotoSummary"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_cont"
             android:layout_width="0dp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toStartOf="@+id/textView9"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
@@ -145,7 +150,7 @@ you are no page 56"
         <TextView
             android:id="@+id/textView9"
             android:layout_width="wrap_content"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="30dp"
             android:layout_height="wrap_content"
             android:text="75 %"
             app:layout_constraintBottom_toBottomOf="@+id/button"
@@ -165,7 +170,6 @@ you are no page 56"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
-
         <TextView
             android:id="@+id/textView10"
             android:layout_width="wrap_content"
@@ -182,37 +186,50 @@ you are no page 56"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="See More"
+            android:onClick="viewAllBooks"
             android:textColor="#909AB4"
             android:textSize="15dp"
             app:layout_constraintBottom_toBottomOf="@+id/textView10"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/textView10" />
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/button5"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Drama"
+            android:onClick="viewAllBooks"
+            android:textColor="@color/white"
+            android:background="@drawable/genre_btn_selected"
+            android:textAllCaps="false"
             app:layout_constraintEnd_toStartOf="@+id/button6"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/button6"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Comedy"
+            android:onClick="viewAllBooks"
+            android:background="@drawable/genre_btns"
+            android:textColor="#3D608E"
+            android:textAllCaps="false"
             android:layout_marginHorizontal="5dp"
             app:layout_constraintEnd_toStartOf="@+id/button8"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/button5"
             app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/button8"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Horror"
+            android:onClick="viewAllBooks"
+            android:background="@drawable/genre_btns"
+            android:textColor="#3D608E"
+            android:textAllCaps="false"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/button6"
@@ -220,10 +237,12 @@ you are no page 56"
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button9"
         android:layout_width="70dp"
         android:layout_height="70dp"
+        android:textSize="35dp"
+        android:textColor="@color/white"
         android:layout_margin="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="16dp"
@@ -249,18 +268,20 @@ you are no page 56"
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="131dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="12dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView16"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@drawable/maze" />
 
     <TextView
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="gotoBook"
+        android:text="The Maze Runner"
         app:layout_constraintEnd_toEndOf="@+id/imageView4"
         app:layout_constraintStart_toStartOf="@+id/imageView4"
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
@@ -271,6 +292,7 @@ you are no page 56"
         android:layout_height="wrap_content"
         android:text="View All"
         android:layout_marginRight="20dp"
+        android:onClick="viewAllBooks"
         android:textColor="#909AB4"
         android:textSize="12dp"
         app:layout_constraintBottom_toTopOf="@+id/imageView4"
